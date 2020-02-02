@@ -1,5 +1,5 @@
-const wonderURL = 'http://localhost:3000/api/wonders/'
-const quizURL = 'http://localhost:3000/api/quiz/'
+const wonderURL = 'api/wonders/'
+const quizURL = 'api/quiz/'
 
 export default {
   getWonders(){
