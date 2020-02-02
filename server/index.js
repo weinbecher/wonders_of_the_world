@@ -30,6 +30,7 @@ if(process.env.NODE_ENV === 'production'){
   app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
 }
 
-app.listen(3000, function(){
+//app.listen(3000, function(){
+app.listen(process.env.PORT || 3000), function(){
   console.log(`app running on port ${this.address().port}`);
 })
