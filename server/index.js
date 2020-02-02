@@ -8,7 +8,7 @@ const MongoClient = require('mongodb').MongoClient;
 app.use(bodyParser.json());
 app.use(cors());
 
-MongoClient.connect('mongodb://localhost:27017')
+MongoClient.connect('mongodb://heroku_c76dvmx8:fe5ehrr8dkgcvmtff7op0qqnrj@ds045627.mlab.com:45627/heroku_c76dvmx8')
 .then((client) => {
   const db = client.db('wonders_of_the_world');
   const wondersCollection = db.collection('wonders');
